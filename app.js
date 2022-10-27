@@ -1,4 +1,4 @@
-function myFunction (){
-    alert(Hi");
-    let HelloPrompt
+function myFunction () {
+    alert("Hello & Welcome!");
+    let helloPrompt = prompt("Have We Met?")
 }
