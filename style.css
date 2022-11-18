@@ -1,11 +1,17 @@
-h1{
-    text text-decoration-line: text-underline;
-    }
-    body {
-        background-color: cyan;
+h1 {
+    text-decoration-line: text-underline;
+}
+
+body {
+    background-color: cyan;
 
 }
-div{
+
+div {
     background-color: violet;
-    border-radius: 15px;
+    /* border-radius: 15px; */
+}
+
+section {
+    margin: auto;
 }
