@@ -1,10 +1,10 @@
 'use strict';
 
-let Username = prompt('Hi there, what is your name?');
+   let Username = prompt('Hi there, what is your name?');
 
 
    alert(`Welcome ${Username}, lets play a guessing game!`);
-   console.log(username)
+
 
    let questionOne = prompt( `${Username}, is coffee my favorite drink?`).toLowerCase();
    if (questionOne === 'yes' || questionOne === 'y') {
