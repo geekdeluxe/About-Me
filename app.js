@@ -5,6 +5,8 @@ let Username = prompt('Hi there, what is your name?');
 let correctGuesses = 0;
 
 
+
+
 alert(`Welcome ${Username}, lets play a guessing game!`);
 
 
@@ -76,37 +78,38 @@ let correctAnswer = 8;
 let response = null 
 
 while (response != correctAnswer) {
-   if (!guesses){
+   if (guesses === 0) {
       alert("You've run out of guesses, the correct answer is 8")
       break;
    }
    response = parseInt(prompt(questionEight));
    guesses -= 1
    if (response === correctAnswer) {
-      alert("That's correct!");  
+      alert("That's correct!");
       correctGuesses += 1 
    } else if (response < correctAnswer) {
       alert("That's too low, please try again");
-   } else (response > correctAnswer) {
+   } else (response > correctAnswer); {
       alert("That's too high, please try again");
    }
- let questionNine = prompt('Which of the following countries do I want to visit? (guess one): Netherlands, France, Spain, Italy, Bolivia, New Zealand');
+ 
+   }
 
-   var favoriteCountries = "Denmark,"Netherlands", "France", "Spain", "Italy", "New Zealand"
-   if favoriteCountries.includes(answer1) 
-      alert("Correct!");
+
+
+var favoriteCountries = ["Denmark", "Netherlands", "France", "Spain", "Italy", "New Zealand"];
+
+let Countriesguesses = 6
+
+for (let i = 0; i < Countriesguesses; i++) {
+   let questionNine = prompt('Which of the following countries do I want to visit? (guess one): Netherlands, France, Spain, Italy, Bolivia, New Zealand');
+   if (favoriteCountries.includes(questionNine)) {
+      alert("Correct!")
+      correctGuesses++
       break;
+   }
    else {
       alert("Sorry, that's not right");
-   }   
    }
-
-   for (var i = 0<correctAnswers.length); i++ {
-      if (response === correctAnswers[i])
-      result = true;
-   }
-
-var countryElement = document.getElementbyClassName('country');
-
-
-
+}
+alert(`Congrats! You guessed ${correctGuesses} answers correctly`);
